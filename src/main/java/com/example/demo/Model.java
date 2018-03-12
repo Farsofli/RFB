@@ -9,7 +9,7 @@ public class Model {
         user.setUsername("SANDRA");
         user.setPassword("RFB");
 
-        if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
+        if (user.getUsername().equalsIgnoreCase(username) && user.getPassword().equals(password)) {
             return user;
         } return null;
 
